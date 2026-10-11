@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AGNI KAVACH — An educational early-detection and emergency shut-off concept for hot-air balloon burner safety." />
+    <meta property="og:title" content="AGNI KAVACH — A burner-safety concept" />
+    <meta property="og:description" content="Explore a proposed early-detection and emergency gas shut-off concept for hot-air balloon burner safety." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#070b10" />
+    <title>AGNI KAVACH — A burner-safety concept</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <div class="pointer-glow" aria-hidden="true"></div>
+      <div class="pointer-dot" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <div class="container nav-inner">
+          <a href="#top" class="brand" data-testid="link-home">
+            <span class="brand-mark">🔥</span>
+            <span>AGNI KAVACH</span>
+          </a>
+          <nav class="nav-links" aria-label="Main navigation">
+            <a href="#idea" data-testid="link-nav-the-idea">The idea</a>
+            <a href="#system" data-testid="link-nav-signal-path">System</a>
+            <a href="#components" data-testid="link-nav-components">Components</a>
+            <a href="#limits" data-testid="link-nav-limits">Limits</a>
+          </nav>
+          <a href="#system" class="nav-cta magnetic" data-testid="button-explore-system">
+            Explore the concept →
+          </a>
+          <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" data-testid="button-mobile-navigation">
+            ☰
+          </button>
+        </div>
+      </header>
+
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid parallax-layer" data-depth=".08"></div>
+
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 690 570" role="img" aria-label="Hot-air balloon burner concept illustration">
+            <defs>
+              <radialGradient id="flameGradient" cx="50%" cy="65%" r="55%">
+                <stop offset="0%" stop-color="#ffd083" stop-opacity=".96"></stop>
+                <stop offset="44%" stop-color="#f07835" stop-opacity=".75"></stop>
+                <stop offset="100%" stop-color="#a9341d" stop-opacity=".02"></stop>
+              </radialGradient>
+              <filter id="blurGlow" x="-80%" y="-80%" width="260%" height="260%">
+                <feGaussianBlur stdDeviation="13"></feGaussianBlur>
+              </filter>
+            </defs>
+            <g class="parallax-layer" data-depth=".17">
+              <path class="art-cloud" d="M83 335c-27 0-45-19-45-43 0-23 18-42 42-44 8-33 37-57 72-57 33 0 61 22 71 53 7-3 16-5 24-5 29 0 53 22 53 50s-24 46-54 46H83z" opacity=".63"></path>
+              <circle cx="539" cy="255" r="121" class="art-thin" stroke-dasharray="2 8"></circle>
+              <circle cx="539" cy="255" r="149" class="art-thin" stroke-dasharray="1 12" opacity=".45"></circle>
+            </g>
+            <g class="parallax-layer" data-depth=".34">
+              <ellipse cx="378" cy="434" rx="189" ry="81" class="art-flame" opacity=".65"></ellipse>
+              <path d="M255 451c19-53 8-88 39-121 7 41 24 48 22 79 23-47 9-93 57-143-2 53 32 69 26 113 24-35 31-56 68-79-7 57 22 93 13 151H255z" class="art-flame" opacity=".85"></path>
+              <path d="M326 454c9-31 4-47 21-70 8 25 16 28 15 49 17-26 10-43 30-69 5 31 18 40 17 61 13-17 19-28 33-39-2 27 7 46 5 68H326z" fill="#ffd083" opacity=".7"></path>
+            </g>
+            <g class="parallax-layer" data-depth=".53">
+              <path d="M426 98c0-59 42-99 96-99s96 40 96 99c0 73-55 134-96 167-41-33-96-94-96-167z" fill="#4a8fc7" class="art-balloon"></path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="container">
+          <div class="hero-copy">
+            <div class="hero-overline eyebrow">
+              <span class="pulse-mark"></span> An educational burner-safety concept
+            </div>
+            <h1 id="hero-title">
+              AGNI
+              <br />
+              KAVACH
+              <span>Notice early.<br />Respond clearly.</span>
+            </h1>
+            <p class="hero-sub">
+              A proposed early-detection and emergency gas shut-off concept for hot-air balloon burner safety—made easier to understand, not presented as flight equipment.
+            </p>
+            <div class="hero-actions">
+              <a href="#system" class="button-primary magnetic" data-testid="button-follow-signal">
+                Follow the signal →
+              </a>
+              <a href="#idea" class="button-quiet magnetic" data-testid="button-project-overview">
+                Start with the idea
+              </a>
+            </div>
+            <div class="hero-note">Learning concept · not installed or certified safety equipment</div>
+          </div>
+        </div>
+
+        <a href="#idea" class="hero-scroll" aria-label="Scroll to project introduction" data-testid="link-scroll-intro">
+          SCROLL TO EXPLORE
+        </a>
+      </section>
+
+      <div class="ticker" aria-label="Project summary">
+        <div class="container ticker-inner">
+          <div class="ticker-cell"><strong>01</strong><span class="ticker-sep"></span> Detect proposed inputs</div>
+          <div class="ticker-cell"><strong>02</strong><span class="ticker-sep"></span> Compare in a controller</div>
+          <div class="ticker-cell"><strong>03</strong><span class="ticker-sep"></span> Alert and cut off</div>
+          <div class="ticker-cell"><strong>04</strong><span class="ticker-sep"></span> Explain the boundaries</div>
+        </div>
+      </div>
+
+      <section class="section intro-section" id="idea" data-cue-section="true">
+        <div class="container">
+          <div class="intro-grid">
+            <div class="reveal">
+              <div class="section-kicker eyebrow">The idea / at a glance</div>
+              <h2 class="intro-title">A clearer picture<br /><em>of burner safety.</em></h2>
+            </div>
+            <div class="intro-right reveal reveal-delay-1">
+              <p>
+                AGNI KAVACH explores one proposed chain: monitor conditions around a hot-air balloon burner, compare sensor inputs against predefined limits, then signal an alert and close a normally closed solenoid valve when the concept calls for intervention.
+              </p>
+              <p>
+                It is a learning model, not a validated design. The page describes the intended relationships among parts—not an installed system, flight procedure, test result or guarantee of protection.
+              </p>
+              <a href="#system" class="text-link" data-testid="link-understand-system">
+                See how the parts connect →
+              </a>
+            </div>
+          </div>
+          <div class="stat-strip reveal reveal-delay-2" aria-label="Project building blocks">
+            <div class="stat-item">
+              <span class="stat-n">A</span>
+              <span class="stat-t">Three proposed kinds of sensor input</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-n">B</span>
+              <span class="stat-t">Arduino-family / Uno prototype controller</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-n">C</span>
+              <span class="stat-t">Alerts and a proposed fuel shut-off output</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section system-section" id="system" data-cue-section="true">
+        <div class="container">
+          <div class="system-head reveal">
+            <div>
+              <div class="section-kicker eyebrow">The system / signal path</div>
+              <h2 class="section-title">From sensing<br />to a response.</h2>
+            </div>
+            <p class="section-copy">
+              An Arduino-family controller is proposed to compare values from sensors with predefined limits. The illustration shows the concept's connections, not a live system or operational specification.
+            </p>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <div class="diagram-frame" data-testid="diagram-signal-path">
+              <div class="diagram-topline">
+                <span>Proposed signal path</span>
+                <span>Inputs → controller → outputs</span>
+              </div>
+
+              <div class="diagram-wrap">
+                <div class="diagram-grid"></div>
+                <svg id="diagramSvg" viewBox="0 0 900 620" preserveAspectRatio="xMidYMid meet" aria-label="Interactive hardware connection diagram"></svg>
+
+                <aside class="info-panel">
+                  <div class="info-label">Selected component</div>
+                  <h3 id="nodeTitle">Arduino Uno</h3>
+                  <p id="nodeText">
+                    Main logic unit comparing sensor input and sending output commands to the alert and shut-off systems.
+                  </p>
+                  <div class="hint">Click a part • Wheel to zoom • Drag to move</div>
+                </aside>
+              </div>
+
+              <p class="diagram-note">
+                An educational block diagram; not installation guidance, live readings or a certified safety architecture.
+              </p>
+              <div class="diagram-foot">
+                <span>PROPOSED INPUTS / OUTPUTS</span>
+                <span>NO LIVE HARDWARE STATE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section components-section" id="components" data-cue-section="true">
+        <div class="container">
+          <div class="components-heading reveal">
+            <div>
+              <div class="section-kicker eyebrow">The parts / what each contributes</div>
+              <h2 class="section-title">A parts list<br />with a purpose.</h2>
+            </div>
+            <p class="section-copy">
+              Names and roles below reflect the proposed project concept. Inclusion on this page is not an endorsement for balloon installation or use.
+            </p>
+          </div>
+
+          <div class="component-grid">
+            <article class="component-card large reveal" data-testid="card-component-mq6">
+              <span class="component-index">INPUT / 01</span>
+              <span class="component-arrow">→</span>
+              <div class="component-icon" aria-hidden="true">📡</div>
+              <h3>MQ-6 gas sensor</h3>
+              <p>Proposed LPG / propane sensing input. No detection range, calibration or field performance is claimed.</p>
+            </article>
+
+            <article class="component-card large reveal" data-testid="card-component-thermocouple">
+              <span class="component-index">INPUT / 02</span>
+              <span class="component-arrow">→</span>
+              <div class="component-icon" aria-hidden="true">🌡️</div>
+              <h3>Temperature + pressure</h3>
+              <p>A K-type thermocouple read through MAX6675, alongside a fuel-line pressure transducer.</p>
+            </article>
+
+            <article class="component-card small reveal" data-testid="card-component-controller">
+              <span class="component-index">PROCESS / 03</span>
+              <span class="component-arrow">→</span>
+              <div class="component-icon" aria-hidden="true">⚙️</div>
+              <h3>Arduino family / Uno</h3>
+              <p>An Arduino Uno prototype compares inputs against predefined limits in the concept.</p>
+            </article>
+
+            <article class="component-card small reveal" data-testid="card-component-shutoff">
+              <span class="component-index">OUTPUT / 04</span>
+              <span class="component-arrow">→</span>
+              <div class="component-icon" aria-hidden="true">🚫</div>
+              <h3>Solenoid cutoff</h3>
+              <p>A normally closed solenoid is the proposed emergency fuel shut-off response.</p>
+            </article>
+
+            <article class="component-card small reveal" data-testid="card-component-alerts">
+              <span class="component-index">OUTPUT / 05</span>
+              <span class="component-arrow">→</span>
+              <div class="component-icon" aria-hidden="true">🔔</div>
+              <h3>LCD, LEDs + buzzer</h3>
+              <p>Visual and audible outputs are proposed to make a system response noticeable.</p>
+            </article>
+
+            <article class="component-card small reveal" data-testid="card-component-spark">
+              <span class="component-index">IGNITION / 06</span>
+              <span class="component-arrow">→</span>
+              <div class="component-icon" aria-hidden="true">✨</div>
+              <h3>Relay + spark module</h3>
+              <p>Listed components include a relay-controlled spark module and pilot override.</p>
+            </article>
+
+            <article class="component-card small reveal" data-testid="card-component-power">
+              <span class="component-index">SUPPLY / 07</span>
+              <span class="component-arrow">→</span>
+              <div class="component-icon" aria-hidden="true">🔋</div>
+              <h3>12V LiFePO₄ + regulator</h3>
+              <p>A 12V LiFePO₄ supply and regulator are listed; operation depends on power being available.</p>
+            </article>
+          </div>
+
+          <div class="component-footnote reveal">
+            <span>PROPOSED COMPONENTS, NOT CERTIFIED HARDWARE.</span>
+            <span>NO HARDWARE RATINGS OR PERFORMANCE CLAIMS IMPLIED.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="limits-section" id="limits" data-cue-section="true">
+        <div class="container limits-inner">
+          <div class="reveal">
+            <div class="section-kicker eyebrow">Limits / what this page cannot promise</div>
+            <h2 class="limits-title">Conceptual by design.<br /><em>Not flight equipment.</em></h2>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <p class="limits-copy">
+              This is a proposed educational concept. It has no stated numerical thresholds or measured performance results, and makes no reliability or certification claim. It is not described as installed, flight-tested or suitable for real-world use.
+            </p>
+            <div class="limits-points">
+              <div class="limit-point">❌ Sensors can fail, drift or give misleading readings.</div>
+              <div class="limit-point">❌ The proposed electronics depend on available power.</div>
+              <div class="limit-point">❌ Sensors and components require inspection and calibration.</div>
+              <div class="limit-point">❌ This page reports no live status, test results or reliability.</div>
+            </div>
+
+            <div class="limits-disclaimer">
+              Never rely on this concept in place of certified equipment, established operating procedures, qualified inspection or pilot judgement.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-brand">
+          🔥 AGNI KAVACH <span>·</span> CONCEPT PROJECT
+        </div>
+        <div class="footer-links">
+          <a href="#idea" data-testid="link-footer-idea">Project idea</a>
+          <a href="#system" data-testid="link-footer-system">Signal path</a>
+          <a href="#components" data-testid="link-footer-components">Components</a>
+          <a href="#limits">Limitations</a>
+        </div>
+        <span>EDUCATIONAL OVERVIEW / NOT LIVE HARDWARE</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
